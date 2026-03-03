@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Politica de confidențialitate (GDPR) — Adrian Gânga PFA</title>
+  <meta name="description" content="Politica de confidențialitate și informare GDPR pentru site-ul Adrian Gânga PFA." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Adrian Gânga PFA</a>
+
+      <nav class="links" aria-label="Navigare">
+        <a href="index.html" data-i18n="nav_home">Acasă</a>
+        <a href="services.html" data-i18n="nav_services">Servicii</a>
+        <a href="privacy.html" class="active" data-i18n="nav_privacy">Confidențialitate (GDPR)</a>
+        <a href="index.html#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="lang-switch" aria-label="Language switch">
+        <button class="chip" type="button" data-lang="ro" aria-pressed="true">RO</button>
+        <button class="chip" type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero small">
+      <div class="container">
+        <p class="badge" data-i18n="gdpr_badge">Informare GDPR</p>
+        <h1 data-i18n="gdpr_title">Politica de confidențialitate</h1>
+        <p class="lead" data-i18n="gdpr_lead">
+          Această pagină descrie ce date pot fi prelucrate atunci când mă contactezi și cum sunt folosite.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container prose">
+        <h2 data-i18n="gdpr_1_t">1. Operatorul de date</h2>
+        <p data-i18n="gdpr_1_p">
+          Operator: Adrian Gânga PFA (date de contact în pagina principală). Pentru solicitări GDPR, folosește adresa de email.
+        </p>
+
+        <h2 data-i18n="gdpr_2_t">2. Ce date colectez</h2>
+        <ul>
+          <li data-i18n="gdpr_2_1">Date de contact (nume, email, telefon) dacă mi le trimiți prin email/telefon.</li>
+          <li data-i18n="gdpr_2_2">Conținutul mesajului și informații legate de proiect (pe care alegi să le comunici).</li>
+        </ul>
+
+        <h2 data-i18n="gdpr_3_t">3. Scop și temei legal</h2>
+        <ul>
+          <li data-i18n="gdpr_3_1">Răspuns la solicitări / ofertare — interes legitim sau demersuri la cererea persoanei.</li>
+          <li data-i18n="gdpr_3_2">Derularea contractului — executarea contractului.</li>
+          <li data-i18n="gdpr_3_3">Obligații legale (facturare/contabilitate) — obligație legală.</li>
+        </ul>
+
+        <h2 data-i18n="gdpr_4_t">4. Destinatari</h2>
+        <p data-i18n="gdpr_4_p">
+          Nu vând datele tale. Datele pot fi accesate doar de mine și, după caz, de furnizori necesari (ex: contabilitate),
+          în baza obligațiilor legale și/sau contractuale.
+        </p>
+
+        <h2 data-i18n="gdpr_5_t">5. Durata stocării</h2>
+        <p data-i18n="gdpr_5_p">
+          Păstrez datele cât este necesar pentru comunicare și derularea relației contractuale. Documentele financiar-contabile
+          se păstrează conform termenelor legale.
+        </p>
+
+        <h2 data-i18n="gdpr_6_t">6. Drepturile tale</h2>
+        <ul>
+          <li data-i18n="gdpr_6_1">Acces, rectificare, ștergere (în condițiile legii), restricționare.</li>
+          <li data-i18n="gdpr_6_2">Opoziție la prelucrare (în baza interesului legitim).</li>
+          <li data-i18n="gdpr_6_3">Portabilitate (unde este aplicabil).</li>
+          <li data-i18n="gdpr_6_4">Plângere la ANSPDCP.</li>
+        </ul>
+
+        <h2 data-i18n="gdpr_7_t">7. Cookies</h2>
+        <p data-i18n="gdpr_7_p">
+          Site-ul este static și nu folosește cookies de tracking. Dacă adaugi analytics în viitor, actualizează această pagină.
+        </p>
+
+        <h2 data-i18n="gdpr_8_t">8. Securitate</h2>
+        <p data-i18n="gdpr_8_p">
+          Aplic măsuri rezonabile pentru protejarea datelor (control acces, parole, minimizarea datelor).
+        </p>
+
+        <div class="note">
+          <strong data-i18n="gdpr_note_t">Important:</strong>
+          <span data-i18n="gdpr_note_p">Acest text este un model general. Pentru situații speciale (newsletter, formulare, tracking), poate necesita adaptare.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>© <span id="y"></span> Adrian Gânga PFA</span>
+      <span class="muted">Site static • GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    window.I18N && window.I18N.init();
+  </script>
+</body>
+</html>

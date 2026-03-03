@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicii — Adrian Gânga PFA</title>
+  <meta name="description" content="Servicii de consultanță IT (CAEN 6202): analiză, implementare, optimizare și suport." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Adrian Gânga PFA</a>
+
+      <nav class="links" aria-label="Navigare">
+        <a href="index.html" data-i18n="nav_home">Acasă</a>
+        <a href="services.html" class="active" data-i18n="nav_services">Servicii</a>
+        <a href="privacy.html" data-i18n="nav_privacy">Confidențialitate (GDPR)</a>
+        <a href="index.html#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="lang-switch" aria-label="Language switch">
+        <button class="chip" type="button" data-lang="ro" aria-pressed="true">RO</button>
+        <button class="chip" type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero small">
+      <div class="container">
+        <p class="badge" data-i18n="srv_badge">CAEN 6202 · Consultanță IT</p>
+        <h1 data-i18n="srv_title">Servicii</h1>
+        <p class="lead" data-i18n="srv_lead">
+          Servicii orientate pe rezultate: analiză, implementare, optimizare și suport. Lucrăm pe bază de obiective,
+          livrabile și termene agreate.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="index.html#contact" data-i18n="srv_cta">Cere o ofertă</a>
+          <a class="btn" href="privacy.html" data-i18n="srv_cta2">Politica GDPR</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 data-i18n="srv_block_title">Ce pot livra</h2>
+        <div class="grid3">
+          <div class="tile">
+            <h3 data-i18n="srv_1_t">Consultanță & analiză</h3>
+            <ul class="list">
+              <li data-i18n="srv_1_1">analiză cerințe și clarificări tehnice</li>
+              <li data-i18n="srv_1_2">propuneri arhitectură și plan de implementare</li>
+              <li data-i18n="srv_1_3">estimări, roadmap și definire livrabile</li>
+            </ul>
+          </div>
+          <div class="tile">
+            <h3 data-i18n="srv_2_t">Implementare & integrare</h3>
+            <ul class="list">
+              <li data-i18n="srv_2_1">implementare funcționalități (web/backend)</li>
+              <li data-i18n="srv_2_2">integrare API (REST) și servicii</li>
+              <li data-i18n="srv_2_3">optimizări de performanță</li>
+            </ul>
+          </div>
+          <div class="tile">
+            <h3 data-i18n="srv_3_t">Mentenanță & suport</h3>
+            <ul class="list">
+              <li data-i18n="srv_3_1">bug fixing și stabilizare</li>
+              <li data-i18n="srv_3_2">upgrade-uri, refactorizare, hardening</li>
+              <li data-i18n="srv_3_3">suport pe incident și documentație</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2 data-i18n="srv_how_title">Mod de lucru</h2>
+        <div class="grid2">
+          <div class="tile">
+            <h3 data-i18n="srv_how_1_t">Start</h3>
+            <p data-i18n="srv_how_1_p">Scurt call + brief, apoi confirmăm obiective și livrabile (comandă/confirmare email).</p>
+          </div>
+          <div class="tile">
+            <h3 data-i18n="srv_how_2_t">Livrare</h3>
+            <p data-i18n="srv_how_2_p">Iterativ sau pe milestone-uri; status săptămânal și predare cu documentație minimă.</p>
+          </div>
+          <div class="tile">
+            <h3 data-i18n="srv_how_3_t">Facturare</h3>
+            <p data-i18n="srv_how_3_p">Fixed price pe livrabile sau tarif orar, conform comenzii și contractului cadru.</p>
+          </div>
+          <div class="tile">
+            <h3 data-i18n="srv_how_4_t">Suport</h3>
+            <p data-i18n="srv_how_4_p">Perioadă de stabilizare / suport în funcție de nevoile proiectului.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="note">
+          <strong data-i18n="srv_note_t">Notă:</strong>
+          <span data-i18n="srv_note_p">Serviciile sunt prestate ca activitate independentă (PFA), fără subordonare, conform contractului civil/comercial.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>© <span id="y"></span> Adrian Gânga PFA</span>
+      <span class="muted">Site static • GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    window.I18N && window.I18N.init();
+  </script>
+</body>
+</html>
